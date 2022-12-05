@@ -1,9 +1,8 @@
 import React from 'react';
-import Button from './Button';
 
 export default function Header() {
   return (
-    <nav class="flex flex-wrap items-center justify-between p-4 bg-gray lg:px-24 lg:py-4">
+    <nav class="flex flex-wrap items-center justify-between p-4 bg-gray">
     <div class="w-auto lg:order-2 lg:w-1/5 lg:text-center">
         <a class="text-xl font-semibold text-gray-800 font-heading" href="#">
             <img src="/images/Logo.svg" alt="" width={150} height={55} />
@@ -21,7 +20,7 @@ export default function Header() {
         </button>
     </div>
     <div class="hidden w-full navbar-menu lg:order-1 lg:block lg:w-2/5">
-    <button class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-primary rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit">
+    <button class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-primary rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit">
                             Login
      </button>
 
