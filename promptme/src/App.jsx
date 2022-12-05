@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="text-3xl font-bold underline">
-      Hello world!
+      Wondering if you should leave your recruiter before they ghost you?
       </h1>
     </div>
   )
