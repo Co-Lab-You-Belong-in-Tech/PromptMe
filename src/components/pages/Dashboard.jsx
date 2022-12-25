@@ -1,4 +1,4 @@
-import { icons } from "../assets/assets";
+import { icons } from "../../assets/assets";
 import Operations from "../elements/Operations";
 import Sidebar from "../elements/Sidebar";
 

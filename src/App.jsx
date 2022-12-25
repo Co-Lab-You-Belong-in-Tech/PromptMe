@@ -21,7 +21,6 @@ const App = () => {
         <Routes>
           <Route path='recipients' element={<Recipients />} />
           <Route path='analytics' element={<Analytics />} />
-          <Route path='dashboard' element={<Dashboard />} />
           <Route path='settings' element={<Settings />} />
           <Route path='resources' element={<Resources />} />
           <Route path='aq' element={<AssessmentQuestions />} />
