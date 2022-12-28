@@ -1,5 +1,6 @@
 import Button from '../elements/Button'
 import Header from '../elements/Header';
+import { useNavigate, Link } from "react-router-dom";
 
 export const Welcome = () => {
   return (
@@ -9,7 +10,10 @@ export const Welcome = () => {
         <h1>
           Wondering if you should leave your <br></br> recruiter before they ghost you?
         </h1>
-        <Button className='w-2/6 py-4 m-8'> Get started</Button>
+        <Link to="/Dashboard">
+        <Button type="button" 
+          className='w-40 py-4 m-8'> Get started</Button>
+        </Link>
       </div>
     </section>
   )
