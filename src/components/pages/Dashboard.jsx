@@ -2,7 +2,6 @@ import { icons } from "../../assets/assets";
 import Operations from "../elements/Operations";
 import Sidebar from "../elements/Sidebar";
 
-
 const Dashboard = () => {
   return (
     <section className="h-full">
@@ -12,18 +11,18 @@ const Dashboard = () => {
           {/* <!-- Scrollable container --> */}
           <div className="overflow-y-scroll p-4 pb-12">
             {/* <!-- Your content --> */}
-            <nav className="sticky bg-white/60 top-0 flex items-center justify-around mb-8">
+            <nav className="sticky bg-white/60 top-0 flex items-center justify-between mb-16">
               <button type="button" className="btn">+ Create New</button>
               <ul className="flex items-center justify-between w-96">
                 <li><button type="button"><img src={icons.search} alt="Search Icon" /></button></li>
                 <li><button type="button"><img src={icons.notification} alt="Notification Icon" /></button></li>
-                <li><button type="button" className="btn bg-bg text-primary hover:bg-black/10">Login</button></li>
+                <li><button type="button" className="btn bg-bg hover:bg-black/10">Login</button></li>
                 <li><button type="button" className="btn">Register</button></li>
               </ul>
             </nav>
-            <div className="flex flex-col justify-around h-[90%] my-4">
+            <div className="flex flex-col justify-around h-[90%] my-8">
               <div>
-                <h1 className="text-2xl font-bold">Subject:</h1>
+                <h1 className="text-2xl mt-16 font-bold">Subject:</h1>
                 <p className="text-lg py-4 px-8 bg-bg rounded-lg m-4 flex items-center justify-between">
                   <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</span>
                   <button type="button"><img src={icons.edit} alt="Edit Icon" /></button>
@@ -32,12 +31,18 @@ const Dashboard = () => {
                 <h1 className="text-2xl font-bold">Body:</h1>
                 <p className="text-lg py-4 px-8 bg-bg rounded-lg m-4">
                   <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit cum atque ratione optio sequi itaque, earum, nam delectus ea esse repudiandae facere! Reiciendis atque quibusdam nobis dolor quos, officiis inventore?
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi error consectetur, eius, iure tempore vel eum nemo exercitationem tenetur fugit inventore natus repellendus nesciunt dolore. Vel soluta iusto incidunt voluptatum.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit ea eaque ab rerum alias rem quidem ipsam iure officiis nihil dolorem autem inventore laboriosam perferendis, sed hic ut nobis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloremque non. Eos officia adipisci placeat itaque quae culpa excepturi quidem doloribus odio assumenda, unde suscipit earum eligendi, repellendus hic esse!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus rem tempora facere. Blanditiis ad ipsum suscipit rem quia, corporis enim earum perspiciatis iste veniam repellat repudiandae explicabo dolores, ut esse?
+                  Dear [Interviewer's Name], <br></br>
+
+I wanted to thank you again for taking the time to meet with me on [Date of Interview] to discuss the [Position] at [Company]. I really enjoyed learning more about the role and the company, and I am excited about the opportunity to join your team.
+
+I believe that my skills and experience make me a strong fit for this position, and I am confident that I could make a significant contribution to the company. I am highly motivated and would be honored to be given the opportunity to join your team.
+
+If you have any further questions or need any additional information from me, please don't hesitate to reach out. I am available to meet at your convenience to discuss this opportunity further.
+
+Thank you again for considering my application. I look forward to hearing from you soon.<br></br>
+
+Sincerely,<br></br>
+[Your Name]
                   </p>
                   <div className="text-end">
                     <button type="button"><img src={icons.edit} alt="Edit Icon" /></button>

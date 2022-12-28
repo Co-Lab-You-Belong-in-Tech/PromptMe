@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 export default function AssessmentQuestions() {
     const questions = [
       {
-        questionTest: 'Have you recently applied a job?',
+        questionTest: 'Have you recently applied for a job?',
         answerOptions: [
             { answerTest: 'Yes' },
             { answerTest: 'No' },
@@ -54,16 +54,17 @@ export default function AssessmentQuestions() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
 
   return (
-    <div className='AssessmentQuestions'>
+    <div className='AssessmentQuestions flex flex-col justify-center items-center'>
 
-        <div className='question-section'>
+        <div className='question-section flex flex-col justify-center items-cente'>
            <div className='question-count'>
             <span>Question 1</span>
            </div>
-           <div className='question-text'>(questions[currentQuestion].questionTest)</div>
+           <div className='question-text'>{questions[currentQuestion].questionTest}</div>
         </div>
-        <div className='answer-section'>
-             {questions[0].answerOptions.map((answerOption) => (<button>(answerOption.answerTest)</button>) )}
+        <div className='answer-section flex flex-col justify-between p-4'>
+             {questions[currentQuestion].answerOptions.map((answerOption) => (
+             <button type="button" onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}>{answerOption.answerTest}</button>) )}
         </div>
     </div>
   )

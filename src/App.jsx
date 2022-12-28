@@ -4,7 +4,7 @@ import Welcome from './components/pages/Welcome';
 import Dashboard from './components/pages/Dashboard';
 import Templates from './components/pages/Templates';
 import Recipients from './components/pages/Recipients';
-import Analytics from './components/pages/Analytics.jsx';
+import Analytics from './components/pages/Analytics';
 import Settings from './components/pages/Settings';
 import Resources from './components/pages/Resources';
 import About from './components/pages/About';
@@ -19,6 +19,11 @@ const App = () => {
     <section className="App">
       <Router>
         <Routes>
+          <Route path='about' element={<About />} />
+          <Route path='faqs' element={<Faqs />} />
+          <Route path='welcome' element={<Welcome />} />
+          <Route path='/' element={<Dashboard />} />
+          <Route path='templates' element={<Templates />} />
           <Route path='recipients' element={<Recipients />} />
           <Route path='analytics' element={<Analytics />} />
           <Route path='settings' element={<Settings />} />

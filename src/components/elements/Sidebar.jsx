@@ -1,4 +1,5 @@
 import { icons, images } from "../../assets/assets"
+import { Link } from "react-router-dom"
 
 const Sidebar = () => {
   return (
@@ -12,10 +13,10 @@ const Sidebar = () => {
           </button>
         </li>
         <li>
-          <button type="button" className="sidebar-item">
+          <Link to="/template"><button type="button" className="sidebar-item">
             <img src={icons.templates} alt="Templates Icon" />
             <span>Templates</span>
-          </button>
+          </button></Link>
         </li>
         <li>
           <button type="button" className="sidebar-item">

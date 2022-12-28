@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Templates = () => {
+function Templates() {
   return (
     <div>Templates</div>
   )
