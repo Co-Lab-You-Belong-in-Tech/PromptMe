@@ -13,7 +13,7 @@ const Sidebar = () => {
           </button>
         </li>
         <li>
-          <Link to="/template"><button type="button" className="sidebar-item">
+          <Link to="/Templates"><button type="button" className="sidebar-item">
             <img src={icons.templates} alt="Templates Icon" />
             <span>Templates</span>
           </button></Link>
@@ -48,10 +48,10 @@ const Sidebar = () => {
           <img src={icons.help} alt="Help Icon" />
           <span>Help</span>
         </button>
-        <button type="button" className="sidebar-item gap-2 w-fit">
+        <Link to="/"><button type="button" className="sidebar-item gap-2 w-fit">
           <img src={icons.logout} alt="Log Out Icon" />
           <span>Signout</span>
-        </button>
+        </button></Link>
       </div>
     </div>
   )
