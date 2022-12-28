@@ -1,8 +1,15 @@
-import React from 'react'
+import { icons } from "../../assets/assets"
+import Operations from "../elements/Operations";
+import Sidebar from "../elements/Sidebar";
+import { Link } from "react-router-dom";
+import Button from "../elements/Button";
 
-function Templates() {
+const Templates = () => {
+  
   return (
-    <div>Templates</div>
+    <div className="text-3xl flex flex-col items-center justify-center h-screen w-screen">
+      <Link to="/Dashboard"><Button type="button">Under development</Button></Link>
+    </div>
   )
 }
 
