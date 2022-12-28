@@ -1,6 +1,7 @@
 import { icons } from "../../assets/assets";
 import Operations from "../elements/Operations";
 import Sidebar from "../elements/Sidebar";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   return (
@@ -12,12 +13,12 @@ const Dashboard = () => {
           <div className="overflow-y-scroll p-4 pb-12">
             {/* <!-- Your content --> */}
             <nav className="sticky bg-white/60 top-0 flex items-center justify-between mb-16">
-              <button type="button" className="btn">+ Create New</button>
+             <Link to="/Templates"><button type="button" className="btn">+ Create New</button></Link>
               <ul className="flex items-center justify-between w-96">
                 <li><button type="button"><img src={icons.search} alt="Search Icon" /></button></li>
                 <li><button type="button"><img src={icons.notification} alt="Notification Icon" /></button></li>
-                <li><button type="button" className="btn bg-bg hover:bg-black/10">Login</button></li>
-                <li><button type="button" className="btn">Register</button></li>
+                <li><Link to="/Login"><button type="button" className="btn bg-bg hover:bg-black/10">Login</button></Link></li>
+                <li><Link to="/Singup"><button type="button" className="btn">Register</button></Link></li>
               </ul>
             </nav>
             <div className="flex flex-col justify-around h-[90%] my-8">
@@ -51,7 +52,7 @@ Sincerely,<br></br>
                 <Operations />
               </div>
               <div className="flex justify-between">
-                <button type="button" className="btn flex bg-bg text-primary hover:bg-black/10">
+                <button type="button" className="btn flex bg-bg hover:bg-black/10">
                   <img src={icons.save} alt="Save and Add" />
                   <span>Save to your templates</span>
                 </button>
