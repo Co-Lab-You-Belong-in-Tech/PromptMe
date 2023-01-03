@@ -1,3 +1,4 @@
+import google from "./icons/google.svg";
 import facebook from "./icons/facebook.png";
 import twitter from "./icons/twitter.png";
 import whatsapp from "./icons/whatsapp.png";
@@ -26,6 +27,7 @@ import save from "./icons/save.svg";
 import copy from "./icons/copy.svg";
 
 export const media = {
+  google,
   facebook,
   twitter,
   whatsapp,
