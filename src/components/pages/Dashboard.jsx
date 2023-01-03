@@ -18,7 +18,7 @@ const Dashboard = () => {
                 <li><button type="button"><img src={icons.search} alt="Search Icon" /></button></li>
                 <li><button type="button"><img src={icons.notification} alt="Notification Icon" /></button></li>
                 <li><Link to="/Login"><button type="button" className="btn bg-primary hover:bg-black/10">Login</button></Link></li>
-                <li><Link to="/Singup"><button type="button" className="btn">Register</button></Link></li>
+                <li><Link to="/Signup"><button type="button" className="btn">Register</button></Link></li>
               </ul>
             </nav>
             <div className="flex flex-col justify-around h-[90%] my-8">

@@ -14,24 +14,18 @@ function Signup() {
           <form action="#" autoComplete="on">
             <div className="flex flex-col mb-2">
               <div className="flex relative ">
-
                 <input type="text" id="sign-in-email" className=" rounded-md flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Name (Optional)" />
               </div>
             </div>
             <div className="flex flex-col mb-2">
               <div className="flex relative ">
-
                 <input type="text" id="sign-in-email" className=" rounded-md flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-gray-300 text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Email" />
               </div>
             </div>
             <div className="flex flex-col mb-6">
               <div className="flex relative ">
-
                 <input type="password" id="sign-in-email" className=" rounded-md flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-gray-300 text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" placeholder="Your password" />
               </div>
-            </div>
-            <div >
-
             </div>
             <Button className='w-full'>Create account</Button>
           </form>
