@@ -1,5 +1,5 @@
 import google from "./icons/google.svg";
-import facebook from "./icons/facebook.png";
+import facebook from "./icons/fb.svg";
 import twitter from "./icons/twitter.png";
 import whatsapp from "./icons/whatsapp.png";
 
